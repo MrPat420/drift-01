@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Simple wrapper that forwards to the Antigravity skill
+agy run ground-up-dag-compiler "$@"
