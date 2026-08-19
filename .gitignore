@@ -1,0 +1,42 @@
+# === ONLY top-level .py FILES ===
+*
+!*.py
+!.gitignore
+!PROJECT_REGISTRY.md
+!MEMORY-ALPHA-01/
+!MEMORY-ALPHA-01/**
+
+# === SECRETS ===
+.env
+*.env
+.env.*
+.bashrc
+*_keys.*
+*_token.*
+*_secret.*
+
+# === EXPLICITLY EXCLUDE SUBDIRECTORIES (already in other repos or not for push) ===
+lib/
+inventory/
+__pycache__/
+*.pyc
+*.log
+tmp/
+uap_daily_v1.2_backup.py
+
+# === HOUSEKEEPING EXCEPTIONS (added 2026-07-15) ===
+!tooling/
+!tooling/**
+!HOUSEKEEPING_*.md
+!.gitleaksignore
+
+# Permanent Exclusion: Chat logs, conversational exports, and data archives
+claude-audit/
+*.json
+*.zip
+archive/
+
+# Heavy Raw Telemetry & Takeouts (>100MB)
+claude-audit/source/
+*.zip
+*.tar.gz

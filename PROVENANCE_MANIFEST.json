@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "target": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP",
+  "format": "json",
+  "nodes": [
+    {
+      "id": "node_01_core",
+      "type": "module",
+      "path": "01_Core_Engine.md"
+    },
+    {
+      "id": "node_02_gateway",
+      "type": "api",
+      "path": "02_API_Gateway.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_01_core",
+      "target": "node_02_gateway"
+    }
+  ]
+}
