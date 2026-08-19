@@ -9,54 +9,123 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "node_id": { "type": "string", "format": "uri", "pattern": "^cinco::grade[1-9][0-9]*::[A-Za-z0-9_]+$" },
-        "grade_level": { "type": "integer", "minimum": 1 },
+        "node_id": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^cinco::grade[1-9][0-9]*::[A-Za-z0-9_]+$"
+        },
+        "grade_level": {
+          "type": "integer",
+          "minimum": 1
+        },
         "causal_prerequisites": {
           "type": "array",
-          "items": { "type": "string", "format": "uri" },
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
           "uniqueItems": true
         },
         "verification_state": {
           "type": "string",
-          "enum": ["UNVERIFIED", "PENDING_AST", "VALIDATED", "REJECTED"]
+          "enum": [
+            "UNVERIFIED",
+            "PENDING_AST",
+            "VALIDATED",
+            "REJECTED"
+          ]
         },
-        "ast_rule_hash": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" }
+        "ast_rule_hash": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "source_file": {
+          "type": "string"
+        }
       },
-      "required": ["node_id", "grade_level", "causal_prerequisites", "verification_state", "ast_rule_hash"]
+      "required": [
+        "node_id",
+        "grade_level",
+        "causal_prerequisites",
+        "verification_state",
+        "ast_rule_hash"
+      ]
     },
     "entity_key_registry": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "entity_key": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
-        "source_file": { "type": "string" },
-        "byte_offset_start": { "type": "integer", "minimum": 0 },
-        "byte_offset_end": { "type": "integer", "minimum": 0 },
-        "deterministic_output": { "type": ["string", "object"] }
+        "entity_key": {
+          "type": "string",
+          "pattern": "^[A-Z0-9_]+$"
+        },
+        "source_file": {
+          "type": "string"
+        },
+        "byte_offset_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "byte_offset_end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "deterministic_output": {
+          "type": [
+            "string",
+            "object"
+          ]
+        }
       },
-      "required": ["entity_key", "source_file", "byte_offset_start", "byte_offset_end", "deterministic_output"]
+      "required": [
+        "entity_key",
+        "source_file",
+        "byte_offset_start",
+        "byte_offset_end",
+        "deterministic_output"
+      ]
     },
     "error_handling": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "UNKNOWN_ENTITY": { "type": "string" },
-        "UNKNOWN_DEPENDENCY": { "type": "string" },
-        "PREREQUISITE_FAILURE": { "type": "string" }
+        "UNKNOWN_ENTITY": {
+          "type": "string"
+        },
+        "UNKNOWN_DEPENDENCY": {
+          "type": "string"
+        },
+        "PREREQUISITE_FAILURE": {
+          "type": "string"
+        }
       },
-      "required": ["UNKNOWN_ENTITY", "UNKNOWN_DEPENDENCY", "PREREQUISITE_FAILURE"]
+      "required": [
+        "UNKNOWN_ENTITY",
+        "UNKNOWN_DEPENDENCY",
+        "PREREQUISITE_FAILURE"
+      ]
     }
   },
   "properties": {
     "dag_nodes": {
       "type": "array",
-      "items": { "$ref": "#/definitions/dag_node" }
+      "items": {
+        "$ref": "#/definitions/dag_node"
+      }
     },
     "entity_key_registry": {
       "type": "array",
-      "items": { "$ref": "#/definitions/entity_key_registry" }
+      "items": {
+        "$ref": "#/definitions/entity_key_registry"
+      }
     },
-    "error_handling": { "$ref": "#/definitions/error_handling" }
+    "error_handling": {
+      "$ref": "#/definitions/error_handling"
+    }
   },
-  "required": ["dag_nodes", "entity_key_registry", "error_handling"]
+  "required": [
+    "dag_nodes",
+    "entity_key_registry",
+    "error_handling"
+  ]
 }

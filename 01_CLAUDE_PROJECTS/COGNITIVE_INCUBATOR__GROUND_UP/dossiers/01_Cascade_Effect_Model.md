@@ -31,3 +31,13 @@ This dossier captures the core concepts of the **Cascade‑Effect Tracking Mecha
 
 ---
 *Generated from the source draft on 2026‑07‑16.*
+
+```dag_node
+{
+  "node_id": "cinco::grade1::cascade_drift",
+  "grade_level": 1,
+  "causal_prerequisites": [],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
+```

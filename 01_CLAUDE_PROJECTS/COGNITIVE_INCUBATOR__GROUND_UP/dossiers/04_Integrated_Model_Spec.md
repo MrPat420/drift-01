@@ -32,3 +32,31 @@ The pipeline enforces strict layered verification: each stage must emit a **stat
 
 ---
 *Compiled from the CINCO‑01 DAG schema and findings (see `findings.md`).*
+
+Code snippet
+{
+  "node_id": "cinco::grade4::integrated_spec",
+  "grade_level": 4,
+  "causal_prerequisites": ["cinco::grade3::rag_down_thesis"],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01"
+}
+{
+  "node_id": "cinco::grade4::integrated_spec",
+  "grade_level": 4,
+  "causal_prerequisites": ["cinco::grade3::rag_down_thesis"],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01"
+}
+
+```dag_node
+{
+  "node_id": "cinco::grade4::integrated_spec",
+  "grade_level": 4,
+  "causal_prerequisites": [
+    "cinco::grade3::rag_down_thesis"
+  ],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0"
+}
+```

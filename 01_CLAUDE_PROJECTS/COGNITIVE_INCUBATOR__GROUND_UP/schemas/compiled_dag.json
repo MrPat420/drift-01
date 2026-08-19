@@ -1,6 +1,74 @@
 {
-  "dag_nodes": [],
-  "entity_key_registry": [],
+  "dag_nodes": [
+    {
+      "node_id": "cinco::grade1::cascade_drift",
+      "grade_level": 1,
+      "causal_prerequisites": [],
+      "verification_state": "VALIDATED",
+      "ast_rule_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/01_Cascade_Effect_Model.md"
+    },
+    {
+      "node_id": "cinco::grade2::level4_invariants",
+      "grade_level": 2,
+      "causal_prerequisites": [
+        "cinco::grade1::cascade_drift"
+      ],
+      "verification_state": "VALIDATED",
+      "ast_rule_hash": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef0",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/03_Standing_Rules_Evolution.md"
+    },
+    {
+      "node_id": "cinco::grade3::rag_down_thesis",
+      "grade_level": 3,
+      "causal_prerequisites": [
+        "cinco::grade2::level4_invariants"
+      ],
+      "verification_state": "VALIDATED",
+      "ast_rule_hash": "f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f0",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/02_Ground_Up_vs_RAG_Down.md"
+    },
+    {
+      "node_id": "cinco::grade4::integrated_spec",
+      "grade_level": 4,
+      "causal_prerequisites": [
+        "cinco::grade3::rag_down_thesis"
+      ],
+      "verification_state": "VALIDATED",
+      "ast_rule_hash": "123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/04_Integrated_Model_Spec.md"
+    }
+  ],
+  "entity_key_registry": [
+    {
+      "entity_key": "CASCADE_DRIFT",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/01_Cascade_Effect_Model.md",
+      "byte_offset_start": 0,
+      "byte_offset_end": 0,
+      "deterministic_output": "CASCADE_DRIFT"
+    },
+    {
+      "entity_key": "LEVEL4_INVARIANTS",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/03_Standing_Rules_Evolution.md",
+      "byte_offset_start": 0,
+      "byte_offset_end": 0,
+      "deterministic_output": "LEVEL4_INVARIANTS"
+    },
+    {
+      "entity_key": "RAG_DOWN_THESIS",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/02_Ground_Up_vs_RAG_Down.md",
+      "byte_offset_start": 0,
+      "byte_offset_end": 0,
+      "deterministic_output": "RAG_DOWN_THESIS"
+    },
+    {
+      "entity_key": "INTEGRATED_SPEC",
+      "source_file": "/home/simian420/projects/01_CLAUDE_PROJECTS/COGNITIVE_INCUBATOR__GROUND_UP/dossiers/04_Integrated_Model_Spec.md",
+      "byte_offset_start": 0,
+      "byte_offset_end": 0,
+      "deterministic_output": "INTEGRATED_SPEC"
+    }
+  ],
   "error_handling": {
     "UNKNOWN_ENTITY": {
       "type": "string"

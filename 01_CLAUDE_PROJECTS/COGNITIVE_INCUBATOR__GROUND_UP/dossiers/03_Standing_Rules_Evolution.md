@@ -21,3 +21,30 @@
 - **L3 rule** introduces a systemic impact analysis, essential for the upcoming ground‑up deterministic architecture.
 
 *Derived from the founding handoff (v1‑v5) and the consolidated `STANDING_RULES_v10.md` (v6‑v10).*\nEOF
+{
+  "node_id": "cinco::grade2::level4_invariants",
+  "grade_level": 2,
+  "causal_prerequisites": ["cinco::grade1::cascade_drift"],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef0"
+}
+OEF
+{
+  "node_id": "cinco::grade2::level4_invariants",
+  "grade_level": 2,
+  "causal_prerequisites": ["cinco::grade1::cascade_drift"],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef0"
+}
+
+```dag_node
+{
+  "node_id": "cinco::grade2::level4_invariants",
+  "grade_level": 2,
+  "causal_prerequisites": [
+    "cinco::grade1::cascade_drift"
+  ],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef0"
+}
+```

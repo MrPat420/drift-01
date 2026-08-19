@@ -5,21 +5,25 @@
       "grade_level": 1,
       "causal_prerequisites": [],
       "verification_state": "VALIDATED",
-      "ast_rule_hash": "d41d8cd98f00b204e9800998ecf8427e"
+      "ast_rule_hash": "e97e7d2ad492093fc3229c669d937d25f514e5ee4f2e7fe1d1af25477ef3194a"
     },
     {
       "node_id": "cinco::grade2::kinematics",
       "grade_level": 2,
-      "causal_prerequisites": ["cinco::grade1::foundation"],
+      "causal_prerequisites": [
+        "cinco::grade1::foundation"
+      ],
       "verification_state": "PENDING_AST",
-      "ast_rule_hash": "e3b0c44298fc1c149afbf4c8996fb924"
+      "ast_rule_hash": "95fa25ae44574fde67a331256c5ebc80528eecefa52cc2bffc9018f14ac7e5e2"
     },
     {
       "node_id": "cinco::grade3::dynamics",
       "grade_level": 3,
-      "causal_prerequisites": ["cinco::grade2::kinematics"],
+      "causal_prerequisites": [
+        "cinco::grade2::kinematics"
+      ],
       "verification_state": "UNVERIFIED",
-      "ast_rule_hash": "9e107d9d372bb6826bd81d3542a419d6"
+      "ast_rule_hash": "827d41253f53c70ffa256d2bc36bc344be5e6fff36c33ca864ebd1e61e1e00dc"
     }
   ],
   "entity_key_registry": [

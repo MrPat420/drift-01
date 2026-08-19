@@ -59,3 +59,24 @@ C4Container
 | Error mode | Soft failure – lower confidence scores. | Hard failure – pipeline halts until missing entity resolved. |
 
 *The deterministic pathway eliminates the 5 % fuzziness, guaranteeing reproducible outputs.*
+
+Code snippet
+{
+  "node_id": "cinco::grade3::rag_down_thesis",
+  "grade_level": 3,
+  "causal_prerequisites": ["cinco::grade2::level4_invariants"],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f0"
+}
+
+```dag_node
+{
+  "node_id": "cinco::grade3::rag_down_thesis",
+  "grade_level": 3,
+  "causal_prerequisites": [
+    "cinco::grade2::level4_invariants"
+  ],
+  "verification_state": "VALIDATED",
+  "ast_rule_hash": "f0e1d2c3b4a5968778695a4b3c2d1e0f0e1d2c3b4a5968778695a4b3c2d1e0f0"
+}
+```
