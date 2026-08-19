@@ -1,0 +1,15 @@
+{
+  "dag_nodes": [],
+  "entity_key_registry": [],
+  "error_handling": {
+    "UNKNOWN_ENTITY": {
+      "type": "string"
+    },
+    "UNKNOWN_DEPENDENCY": {
+      "type": "string"
+    },
+    "PREREQUISITE_FAILURE": {
+      "type": "string"
+    }
+  }
+}
