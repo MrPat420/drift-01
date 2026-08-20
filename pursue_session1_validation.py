@@ -1,1 +1,0 @@
-/home/simian420/projects/05_CLI_SYSTEMS/pursue_session1_validation.py
