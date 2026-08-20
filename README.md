@@ -41,3 +41,10 @@ hw-audit --help
 
 ---
 *© 2026 MrPat420 – All rights reserved.*
+
+---
+
+### Keywords & Core Concepts
+* **AI Middleware & Safety:** Hallucination mitigation, KV-cache drift control, multi-LLM swarm consensus, deterministic AST validation.
+* **Memory & Storage:** O(1) byte-addressable memory indexer, Model Context Protocol (MCP) server, persistent state shims.
+* **Compliance & Forensics:** Title 18 evidentiary chain-of-custody, SHA-256 IP genealogy provenance tracking, heuristic hardware auditing.
